@@ -9,12 +9,12 @@ function Footer() {
     <Row>
       <Col xs="auto">
         <Link to="/series">
-          <Cover image="/images/series.png" title="Popular Series" />
+          <Cover image="images/series.png" title="Popular Series" />
         </Link>
       </Col>
       <Col xs="auto">
         <Link to="/movies">
-          <Cover image="/images/movies.png" title="Popular Movies" />
+          <Cover image="images/movies.png" title="Popular Movies" />
         </Link>
       </Col>
     </Row>

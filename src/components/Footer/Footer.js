@@ -16,10 +16,10 @@ function Footer() {
         </Row>
         <Row className="no-gutters align-items-end justify-content-between">
           <Col md="auto">
-            <img src="/images/social_icons.png" alt="Social Icons" />
+            <img src="images/social_icons.png" alt="Social Icons" />
           </Col>
           <Col md="auto">
-            <img src="/images/store_icons.png" alt="Store Icons" />
+            <img src="images/store_icons.png" alt="Store Icons" />
           </Col>
         </Row>
       </div>
