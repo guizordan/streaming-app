@@ -10,11 +10,11 @@ import { withRouter } from "react-router";
 function Header({ location }) {
   let title = "Popular Titles";
 
-  if (location.pathname === "/movies/") {
+  if (location.pathname === "/movies") {
     title = "Popular Movies";
   }
 
-  if (location.pathname === "/series/") {
+  if (location.pathname === "/series") {
     title = "Popular Series";
   }
 
