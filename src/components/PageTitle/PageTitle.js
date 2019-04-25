@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Container } from "react-bootstrap";
 
 function PageTitle({ title }) {
@@ -10,5 +11,9 @@ function PageTitle({ title }) {
     </div>
   );
 }
+
+PageTitle.propTypes = {
+  title: PropTypes.string.isRequired
+};
 
 export default PageTitle;
