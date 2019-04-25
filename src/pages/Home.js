@@ -8,12 +8,12 @@ function Footer() {
   return (
     <Row>
       <Col xs="auto">
-        <Link to="/series/">
+        <Link to="/series">
           <Cover image="/images/series.png" title="Popular Series" />
         </Link>
       </Col>
       <Col xs="auto">
-        <Link to="/movies/">
+        <Link to="/movies">
           <Cover image="/images/movies.png" title="Popular Movies" />
         </Link>
       </Col>

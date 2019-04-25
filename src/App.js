@@ -19,8 +19,8 @@ function App() {
       <Container className="container content">
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/movies/" component={Movies} />
-          <Route path="/series/" component={Series} />
+          <Route path="/movies" component={Movies} />
+          <Route path="/series" component={Series} />
         </Switch>
       </Container>
       <Footer />
