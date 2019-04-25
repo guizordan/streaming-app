@@ -2,22 +2,19 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 
 import { Link } from "react-router-dom";
+import Cover from "../components/Cover/Cover";
 
 function Footer() {
   return (
     <Row>
       <Col md="auto">
         <Link to="/series/">
-          <img src="/images/series.png" alt="series" />
-          <br />
-          <p className="pt-1">Popular Series</p>
+          <Cover image="/images/series.png" title="Popular Series" />
         </Link>
       </Col>
       <Col md="auto">
         <Link to="/movies/">
-          <img src="/images/movies.png" alt="movies" />
-          <br />
-          <p className="pt-1">Popular Movies</p>
+          <Cover image="/images/movies.png" title="Popular Movies" />
         </Link>
       </Col>
     </Row>

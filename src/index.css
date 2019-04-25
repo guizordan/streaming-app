@@ -10,8 +10,6 @@
 .footer {
   padding-top: 3vh;
   padding-bottom: 4vh;
-  position: fixed;
-  bottom: 0;
   width: 100vw;
 }
 
