@@ -1,0 +1,20 @@
+.bg-blue {
+  background-color: #007bff;
+}
+
+.content {
+  padding-top: 2vh;
+  padding-bottom: 8vh;
+}
+
+.footer {
+  padding-top: 3vh;
+  padding-bottom: 4vh;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.bg-dark {
+  background-color: #1e1e1e !important;
+}
