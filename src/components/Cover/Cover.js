@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Cover({ image, title }) {
   return (
@@ -9,5 +10,14 @@ function Cover({ image, title }) {
     </>
   );
 }
+
+Cover.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+};
+
+Cover.defaultProps = {
+  image: "/images/cover_unavailable.png"
+};
 
 export default Cover;

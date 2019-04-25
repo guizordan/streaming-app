@@ -7,12 +7,12 @@ import Cover from "../components/Cover/Cover";
 function Footer() {
   return (
     <Row>
-      <Col md="auto">
+      <Col xs="auto">
         <Link to="/series/">
           <Cover image="/images/series.png" title="Popular Series" />
         </Link>
       </Col>
-      <Col md="auto">
+      <Col xs="auto">
         <Link to="/movies/">
           <Cover image="/images/movies.png" title="Popular Movies" />
         </Link>

@@ -7,28 +7,32 @@ import Cover from "../components/Cover/Cover";
 class Movies extends Component {
   state = {
     loading: true,
+    error: false,
     movies: []
   };
 
   componentDidMount() {
-    _getTitles().then(res => {
-      const movies = res.entries
-        .filter(entry => entry.programType === "movie")
-        .filter(entry => entry.releaseYear >= 2010)
-        .filter((entry, index) => index < 21)
-        .sort((a, b) => a.title.localeCompare(b.title));
-      this.setState({ movies, loading: false });
-    });
+    _getTitles()
+      .then(res => {
+        const movies = res.entries
+          .filter(entry => entry.programType === "movie")
+          .filter(entry => entry.releaseYear >= 2010)
+          .filter((entry, index) => index < 21)
+          .sort((a, b) => a.title.localeCompare(b.title));
+
+        this.setState({ movies, loading: false });
+      })
+      .catch(() => this.setState({ error: true }));
   }
 
   render() {
-    const { movies, loading } = this.state;
+    const { movies, loading, error } = this.state;
     return (
       <Row className="justify-content-center">
         {movies.length > 0 &&
-          movies.map(movie => {
+          movies.map((movie, index) => {
             return (
-              <Col lg="2" md="3" sm="4" xs="6" className="mb-3">
+              <Col key={index} lg="2" md="3" sm="4" xs="6" className="mb-3">
                 <Cover
                   image={movie.images["Poster Art"].url}
                   title={movie.title}
@@ -43,9 +47,9 @@ class Movies extends Component {
           </Col>
         )}
 
-        {movies.length === 0 && !loading && (
+        {error && (
           <Col md="12" className="text-center">
-            No movies available for display.
+            Oops, something went wrong...
           </Col>
         )}
       </Row>
