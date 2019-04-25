@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-function PageTitle() {
+function PageTitle({ title }) {
   return (
     <div className="bg-dark text-white">
       <Container className="pt-2 pb-2">
-        <strong>Popular Movies</strong>
+        <strong>{title}</strong>
       </Container>
     </div>
   );
