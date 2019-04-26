@@ -14,12 +14,18 @@ function Footer() {
             <small>Copyright 2016 DEMO Streaming. All Rights Reserved</small>
           </Col>
         </Row>
-        <Row className="no-gutters align-items-end justify-content-between">
-          <Col md="auto">
+        <Row className="no-gutters justify-content-between">
+          <Col md="6">
             <img src="images/social_icons.png" alt="Social Icons" />
           </Col>
           <Col md="auto">
-            <img src="images/store_icons.png" alt="Store Icons" />
+            <img src="images/appstore_icon.png" alt="App Store" />
+          </Col>
+          <Col md="auto">
+            <img src="images/playstore_icon.png" alt="Play Store" />
+          </Col>
+          <Col md="auto">
+            <img src="images/msstore_icon.png" alt="Microsoft Store" />
           </Col>
         </Row>
       </div>
